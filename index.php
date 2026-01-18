@@ -15,5 +15,6 @@
     <button type="submit">Login</button>
   </form>
 </div>
+<script src="script.js"></script>
 </body>
 </html>
