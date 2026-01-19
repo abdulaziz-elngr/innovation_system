@@ -1,47 +1,52 @@
 <?php
-session_start();
-if (!isset($_SESSION['username'])) {
-  header("Location: index.php");
-  exit();
-}
+// home.php
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Innovation University - Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Innovation University | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="home-screen">
-  <aside class="sidebar">
-    <div class="sidebar-header">
-      <p>Select</p>
-      <p>Current page</p>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2 class="logo">
+            <img src="images/logo.png" alt="Logo">
+            Innovation University
+        </h2>
+
+        <p class="current">Current page</p>
+
+        <ul>
+            <li class="active">🏠 Home</li>
+            <li><a href="books.php">📚 Books</a></li>
+            <li><a href="category.php">📂 Category</a></li>
+            <li><a href="borrowings.php">🔄 Borrowing</a></li>
+            <li><a href="students.php">👩‍🎓 Student Entry</a></li>
+        </ul>
     </div>
-    <ul class="nav-list">
-      <li class="active">HOME</li>
-      <li>BOOK</li>
-      <li>CATEGORY</li>
-      <li>BORROWING</li>
-      <li>STUDENT ENTRY</li>
-    </ul>
-  </aside>
 
-  <main class="main-area">
-    <header class="top-header">
-      <img src="images/logo.png" alt="Logo">
-      <h1>Innovation University</h1>
-    </header>
+    <!-- Main Content -->
+    <div class="main">
 
-    <section class="action-buttons">
-      <button>Student Entry</button>
-      <button>Create Borrowing</button>
-      <button>Add Category</button>
-      <button>Add Book</button>
-    </section>
-  </main>
+        <div class="image-box">
+            <img src="images/room.jpg" alt="Library Room">
+        </div>
 
-  <script src="script.js"></script>
+        <div class="buttons">
+            <a href="students.php" class="btn">Student Entry</a>
+            <a href="borrowings.php" class="btn">Create Borrowing</a>
+            <a href="category.php" class="btn">Add Category</a>
+            <a href="books.php" class="btn">Add Book</a>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>
