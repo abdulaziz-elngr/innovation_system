@@ -85,12 +85,12 @@ body {
 .dashboard {
     background: #7e57c2;
     color: white;
-    padding: 14px;
+    padding: 16px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 /* Menu */
@@ -104,9 +104,9 @@ body {
 
 .select {
     color: #6a1b9a;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 25px;
+    margin-bottom: 27px;
 }
 
 /* Current page */
