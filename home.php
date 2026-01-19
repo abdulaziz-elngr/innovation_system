@@ -1,50 +1,57 @@
-<?php
-// home.php
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Innovation University | Home</title>
+    <title>Innovation System</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
+<!-- Top Bar -->
+<div class="top-bar">
+    <div class="browser">
+        <span class="circle red"></span>
+        <span class="circle yellow"></span>
+        <span class="circle green"></span>
+        <span class="url">https://localhost/innovation_system/</span>
+    </div>
+    <div class="uni-logo">
+        <img src="images/logo.png">
+        <span>Innovation University</span>
+    </div>
+</div>
+
+<div class="layout">
 
     <!-- Sidebar -->
-    <div class="sidebar">
-        <h2 class="logo">
-            <img src="images/logo.png" alt="Logo">
-            Innovation University
-        </h2>
-
+    <aside class="sidebar">
+        <h4>Select</h4>
         <p class="current">Current page</p>
 
         <ul>
-            <li class="active">🏠 Home</li>
-            <li><a href="books.php">📚 Books</a></li>
-            <li><a href="category.php">📂 Category</a></li>
-            <li><a href="borrowings.php">🔄 Borrowing</a></li>
-            <li><a href="students.php">👩‍🎓 Student Entry</a></li>
+            <li class="active">🏠 HOME</li>
+            <li>📚 BOOKS</li>
+            <li>🗂 CATEGORY</li>
+            <li>🔄 BORROWING</li>
+            <li>👩‍🎓 STUDENT ENTRY</li>
         </ul>
-    </div>
+    </aside>
 
-    <!-- Main Content -->
-    <div class="main">
+    <!-- Main -->
+    <main class="content">
 
-        <div class="image-box">
-            <img src="images/room.jpg" alt="Library Room">
+        <div class="hero">
+            <img src="images/room.jpg">
         </div>
 
-        <div class="buttons">
-            <a href="students.php" class="btn">Student Entry</a>
-            <a href="borrowings.php" class="btn">Create Borrowing</a>
-            <a href="category.php" class="btn">Add Category</a>
-            <a href="books.php" class="btn">Add Book</a>
+        <div class="actions">
+            <button>Student Entry</button>
+            <button>Create Borrowing</button>
+            <button>Add Category</button>
+            <button>Add Book</button>
         </div>
 
-    </div>
+    </main>
 
 </div>
 
