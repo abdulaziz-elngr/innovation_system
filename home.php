@@ -9,34 +9,46 @@
 
 <div class="page">
 
-    <!-- Sidebar overlay -->
+    <!-- Sidebar -->
     <div class="sidebar">
-        <div class="select">Select</div>
 
-        <div class="current">
-            <span class="line"></span>
-            <span>Current page</span>
+        <div class="dashboard" onclick="toggleMenu()">
+            ☰ Dashboard
         </div>
 
-        <ul>
-            <li class="active">🏠 HOME</li>
-            <li>📚 BOOKS</li>
-            <li>🗂 CATEGORY</li>
-            <li>📁 BORROWING</li>
-            <li>👤 STUDENT ENTRY</li>
-        </ul>
+        <div class="menu" id="menu">
+
+            <div class="select">Select</div>
+
+            <div class="current">
+                <span class="line"></span>
+                <span>Current page</span>
+            </div>
+
+            <ul>
+                <li class="active">🏠 HOME</li>
+                <li>📚 BOOKS</li>
+                <li>🗂 CATEGORY</li>
+                <li>📁 BORROWING</li>
+                <li>👤 STUDENT ENTRY</li>
+            </ul>
+
+        </div>
     </div>
 
-    <!-- Top logo -->
+    <!-- Logo -->
     <div class="top-logo">
         <img src="images/logo.png">
-        <span>Innovation<br>University</span>
+        <div class="logo-text">
+            <strong>Innovation</strong>
+            <span>University</span>
+        </div>
     </div>
 
-    <!-- Background image -->
+    <!-- Background -->
     <img src="images/room.jpg" class="bg">
 
-    <!-- Bottom buttons -->
+    <!-- Buttons -->
     <div class="buttons">
         <button>Student Entry</button>
         <button>Create Borrowing</button>
@@ -45,6 +57,12 @@
     </div>
 
 </div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("menu").classList.toggle("show");
+}
+</script>
 
 </body>
 </html>

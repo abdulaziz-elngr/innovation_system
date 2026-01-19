@@ -55,6 +55,7 @@ body {
     font-family: "Segoe UI", sans-serif;
 }
 
+/* Page */
 .page {
     position: relative;
     width: 100vw;
@@ -69,55 +70,79 @@ body {
     object-fit: cover;
 }
 
-/* Sidebar inside image */
+/* Sidebar */
 .sidebar {
     position: absolute;
     top: 80px;
     left: 20px;
-    width: 220px;
-    background: rgba(255,255,255,0.85);
-    padding: 15px;
+    width: 250px;
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Dashboard */
+.dashboard {
+    background: #7e57c2;
+    color: white;
+    padding: 14px;
+    text-align: center;
     border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Menu */
+.menu {
+    display: none;
+}
+
+.menu.show {
+    display: block;
 }
 
 .select {
     color: #6a1b9a;
+    font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
+/* Current page */
 .current {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     color: #6a1b9a;
-    font-size: 14px;
 }
 
 .line {
-    width: 4px;
-    height: 18px;
+    width: 5px;
+    height: 22px;
     background: #6a1b9a;
-    margin-right: 8px;
+    margin-right: 10px;
 }
 
+/* Sidebar list */
 .sidebar ul {
     list-style: none;
 }
 
 .sidebar ul li {
-    padding: 8px;
-    font-size: 14px;
+    padding: 14px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    border-radius: 6px;
     cursor: pointer;
 }
 
 .sidebar ul li.active {
     background: #e1bee7;
-    border-radius: 4px;
     font-weight: bold;
 }
 
-/* Top right logo */
+/* Logo */
 .top-logo {
     position: absolute;
     top: 20px;
@@ -125,30 +150,49 @@ body {
     display: flex;
     align-items: center;
     color: #6a1b9a;
-    font-weight: bold;
 }
 
 .top-logo img {
-    width: 40px;
-    margin-right: 8px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+}
+
+.logo-text strong {
+    font-size: 22px;
+}
+
+.logo-text span {
+    font-size: 15px;
 }
 
 /* Bottom buttons */
 .buttons {
     position: absolute;
-    bottom: 20px;
-    left: 260px;
+    bottom: 0;
+    left: 290px;
     right: 30px;
     display: flex;
-    justify-content: space-between;
+    gap: 15px;
 }
 
 .buttons button {
+    flex: 1;
     background: #7e57c2;
     color: white;
     border: none;
-    padding: 14px 22px;
-    border-radius: 8px;
+    padding: 22px 0;
+    border-radius: 12px;
+    font-size: 17px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.buttons button:hover {
+    background: #6d28d9;
 }
