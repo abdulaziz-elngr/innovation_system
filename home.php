@@ -7,51 +7,42 @@
 </head>
 <body>
 
-<!-- Top Bar -->
-<div class="top-bar">
-    <div class="browser">
-        <span class="circle red"></span>
-        <span class="circle yellow"></span>
-        <span class="circle green"></span>
-        <span class="url">https://localhost/innovation_system/</span>
-    </div>
-    <div class="uni-logo">
-        <img src="images/logo.png">
-        <span>Innovation University</span>
-    </div>
-</div>
+<div class="page">
 
-<div class="layout">
+    <!-- Sidebar overlay -->
+    <div class="sidebar">
+        <div class="select">Select</div>
 
-    <!-- Sidebar -->
-    <aside class="sidebar">
-        <h4>Select</h4>
-        <p class="current">Current page</p>
+        <div class="current">
+            <span class="line"></span>
+            <span>Current page</span>
+        </div>
 
         <ul>
             <li class="active">🏠 HOME</li>
             <li>📚 BOOKS</li>
             <li>🗂 CATEGORY</li>
-            <li>🔄 BORROWING</li>
-            <li>👩‍🎓 STUDENT ENTRY</li>
+            <li>📁 BORROWING</li>
+            <li>👤 STUDENT ENTRY</li>
         </ul>
-    </aside>
+    </div>
 
-    <!-- Main -->
-    <main class="content">
+    <!-- Top logo -->
+    <div class="top-logo">
+        <img src="images/logo.png">
+        <span>Innovation<br>University</span>
+    </div>
 
-        <div class="hero">
-            <img src="images/room.jpg">
-        </div>
+    <!-- Background image -->
+    <img src="images/room.jpg" class="bg">
 
-        <div class="actions">
-            <button>Student Entry</button>
-            <button>Create Borrowing</button>
-            <button>Add Category</button>
-            <button>Add Book</button>
-        </div>
-
-    </main>
+    <!-- Bottom buttons -->
+    <div class="buttons">
+        <button>Student Entry</button>
+        <button>Create Borrowing</button>
+        <button>Add Category</button>
+        <button>Add Book</button>
+    </div>
 
 </div>
 

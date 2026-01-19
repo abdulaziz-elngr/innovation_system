@@ -55,73 +55,50 @@ body {
     font-family: "Segoe UI", sans-serif;
 }
 
-/* Top Bar */
-.top-bar {
-    height: 50px;
-    background: #f5f5f5;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-    border-bottom: 1px solid #ccc;
+.page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.browser {
-    display: flex;
-    align-items: center;
+/* Background image */
+.bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.circle {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    margin-right: 6px;
-}
-
-.red { background: #ff5f56; }
-.yellow { background: #ffbd2e; }
-.green { background: #27c93f; }
-
-.url {
-    margin-left: 10px;
-    color: #555;
-    font-size: 14px;
-}
-
-.uni-logo {
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    color: #6b21a8;
-}
-
-.uni-logo img {
-    width: 30px;
-    margin-right: 8px;
-}
-
-/* Layout */
-.layout {
-    display: flex;
-    height: calc(100vh - 50px);
-}
-
-/* Sidebar */
+/* Sidebar inside image */
 .sidebar {
-    width: 240px;
-    background: #f3e8ff;
-    padding: 20px;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 220px;
+    background: rgba(255,255,255,0.85);
+    padding: 15px;
+    border-radius: 8px;
 }
 
-.sidebar h4 {
-    color: #6b21a8;
+.select {
+    color: #6a1b9a;
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
 .current {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #6a1b9a;
     font-size: 14px;
-    margin-bottom: 10px;
-    color: #6b21a8;
+}
+
+.line {
+    width: 4px;
+    height: 18px;
+    background: #6a1b9a;
+    margin-right: 8px;
 }
 
 .sidebar ul {
@@ -129,48 +106,49 @@ body {
 }
 
 .sidebar ul li {
-    padding: 12px;
-    border-radius: 6px;
-    margin-bottom: 8px;
+    padding: 8px;
+    font-size: 14px;
     cursor: pointer;
 }
 
 .sidebar ul li.active {
-    background: #e9d5ff;
+    background: #e1bee7;
+    border-radius: 4px;
     font-weight: bold;
 }
 
-/* Content */
-.content {
-    flex: 1;
-    padding: 20px;
-    background: #fff;
+/* Top right logo */
+.top-logo {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    color: #6a1b9a;
+    font-weight: bold;
 }
 
-.hero img {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    border-radius: 10px;
+.top-logo img {
+    width: 40px;
+    margin-right: 8px;
 }
 
-/* Buttons */
-.actions {
+/* Bottom buttons */
+.buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 260px;
+    right: 30px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
-.actions button {
-    background: #7c3aed;
+.buttons button {
+    background: #7e57c2;
     color: white;
     border: none;
-    padding: 14px 20px;
+    padding: 14px 22px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-}
-
-.actions button:hover {
-    background: #6d28d9;
 }
