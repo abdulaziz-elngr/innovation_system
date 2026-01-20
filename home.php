@@ -1,10 +1,15 @@
+<?php
+// لو عندك اتصال بقاعدة بيانات
+include('db.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Innovation University</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Font Awesome للأيقونات -->
+  <!-- مكتبة Font Awesome للأيقونات -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -26,11 +31,11 @@
     <!-- المحتوى الرئيسي -->
     <div class="main">
       <div class="header">
-        <h2>Innovation University</h2>
+        <h2>Welcome to Innovation Library System 🤗</h2>
         <img src="images/logo.png" alt="Logo">
       </div>
 
-      <!-- الأزرار السفلية -->
+      <!-- الأزرار البنفسجية -->
       <div class="buttons">
         <a href="students.php" class="btn"><i class="fas fa-user-graduate"></i> Student Entry</a>
         <a href="borrowings.php" class="btn"><i class="fas fa-arrow-right-arrow-left"></i> Create Borrowing</a>
@@ -38,7 +43,9 @@
         <a href="books.php" class="btn"><i class="fas fa-book-medical"></i> Add Book</a>
       </div>
     </div>
+
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
