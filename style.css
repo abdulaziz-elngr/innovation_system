@@ -91,6 +91,12 @@ body {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar ul li a i {
+  margin-right: 8px;
 }
 
 /* المحتوى الرئيسي */
@@ -137,8 +143,23 @@ body {
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.btn i {
+  margin-right: 8px;
 }
 
 .btn:hover {
   background-color: #5a32a3;
+}
+
+/* القائمة المنبثقة (لو هتستخدمها مع toggleMenu) */
+.menu {
+  display: none;
+}
+
+.menu.show {
+  display: block;
 }
