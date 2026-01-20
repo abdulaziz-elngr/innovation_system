@@ -1,68 +1,49 @@
+<?php
+// لو عندك اتصال بقاعدة بيانات
+include('db.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Innovation System</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Innovation Library System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="page">
-
-    <!-- Sidebar -->
+  <div class="container">
+    <!-- القائمة الجانبية -->
     <div class="sidebar">
-
-        <div class="dashboard" onclick="toggleMenu()">
-            ☰ Dashboard
-        </div>
-
-        <div class="menu" id="menu">
-
-            <div class="select">Select</div>
-
-            <div class="current">
-                <span class="line"></span>
-                <span>Current page</span>
-            </div>
-
-            <ul>
-                <li class="active">🏠 HOME</li>
-                <li>📚 BOOKS</li>
-                <li>🗂 CATEGORY</li>
-                <li>📁 BORROWING</li>
-                <li>👤 STUDENT ENTRY</li>
-            </ul>
-
-        </div>
+      <h3>Select</h3>
+      <p>Current page</p>
+      <ul>
+        <li><a href="home.php">HOME</a></li>
+        <li><a href="books.php">BOOK</a></li>
+        <li><a href="category.php">CATEGORY</a></li>
+        <li><a href="borrowings.php">BORROWING</a></li>
+        <li><a href="students.php">STUDENT ENTRY</a></li>
+      </ul>
     </div>
 
-    <!-- Logo -->
-    <div class="top-logo">
-        <img src="images/logo.png">
-        <div class="logo-text">
-            <strong>Innovation</strong>
-            <span>University</span>
-        </div>
+    <!-- المحتوى الرئيسي -->
+    <div class="main">
+      <div class="header">
+        <h2>Innovation Library System</h2>
+        <img src="images/logo.png" alt="Logo">
+      </div>
+
+      <!-- الأزرار البنفسجية -->
+      <div class="buttons">
+        <a href="students.php" class="btn">Student Entry</a>
+        <a href="borrowings.php" class="btn">Create Borrowing</a>
+        <a href="category.php" class="btn">Add Category</a>
+        <a href="books.php" class="btn">Add Book</a>
+      </div>
     </div>
 
-    <!-- Background -->
-    <img src="images/room.jpg" class="bg">
+  </div>
 
-    <!-- Buttons -->
-    <div class="buttons">
-        <button>Student Entry</button>
-        <button>Create Borrowing</button>
-        <button>Add Category</button>
-        <button>Add Book</button>
-    </div>
-
-</div>
-
-<script>
-function toggleMenu() {
-    document.getElementById("menu").classList.toggle("show");
-}
-</script>
-
+  <script src="script.js"></script>
 </body>
 </html>
