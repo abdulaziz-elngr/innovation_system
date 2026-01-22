@@ -23,6 +23,9 @@
             <label>Phone Number</label>
             <input type="text" name="phone_number" required>
 
+            
+         <label>Book Name</label>
+            <input type="text" name="Book_Name" required>
 
             <label>College</label>
             <select name="college" required>
@@ -30,6 +33,27 @@
                 <option value="Computer Science">Computer Science</option>
                 <option value="Engineering">Engineering</option>
             </select>
+
+             <label>Days</label>
+            <select name="Days" required>
+                <option value="">Select Day</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+
+            <label>Number of Days</label>
+            <select name="Days" required>
+                <option value="">Select Day</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+                <option value="Monday">Monday</option>
+            </select>
+
 
             <label>Time</label>
             <input type="time" name="time" required>
