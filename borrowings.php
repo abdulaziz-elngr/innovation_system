@@ -58,10 +58,7 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-
-
-            <label>Time</label>
-            <input type="time" name="time" required>
+    
 
             <div class="form-buttons">
                 <button type="submit" class="save-btn">Save</button>
