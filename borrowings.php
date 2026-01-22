@@ -32,6 +32,10 @@
                 <option value="">Select College</option>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Engineering">Engineering</option>
+                <option value="Business">Business</option>
+                <option value="Applied Arts">Applied Arts</option>
+                <option value="Nursing">Nursing</option>
+           
             </select>
 
              <label>Days</label>
@@ -46,13 +50,13 @@
                 <option value="Friday">Friday</option>
             </select>
 
-            
+
             <label>Number of Days</label>
             <select name="Days" required>
-                <option value="">Select Day</option>
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
-                <option value="Monday">Monday</option>
+                <option value="">Select Number of Days</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
             </select>
 
 
