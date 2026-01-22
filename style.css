@@ -132,6 +132,8 @@ body {
   transform: translateX(-50%);
   display: flex;
   gap: 15px;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 /* تصميم زر */
@@ -194,13 +196,19 @@ body {
 }
 
 .buttons button {
-    padding: 15px 25px;
-    font-size: 50px;
+    padding: 17px 87px;
+    font-size: 30px;
     background: #6f42c1;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     color: white;
     cursor: pointer;
+    white-space: nowrap;
+    width: 250px;
+    height: 50px;
+    min-width: 200px;
+    border-radius: 10px;
+    white-space: nowrap;
 }
 
 /* glass form */
