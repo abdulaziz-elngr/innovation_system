@@ -38,7 +38,7 @@
              <option value="Physical Therapy">Physical Therapy</option>
             </select>
 
-             <label>Days</label>
+             <label>Day</label>
             <select name="Days" required>
                 <option value="">Select Day</option>
                 <option value="Saturday">Saturday</option>
@@ -62,11 +62,11 @@
 
             <div class="form-buttons">
                 <button type="submit" class="save-btn">Save</button>
-                <button type="button" class="back-btn"
+                 <button type="button" class="back-btn"
                         onclick="window.location.href='home.php'">
                     Back
                 </button>
-            </div>
+                </div>
 
         </form>
     </div>

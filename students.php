@@ -36,7 +36,7 @@
 
             <div class="form-buttons">
                 <button type="submit" class="save-btn">Save</button>
-                <button type="button" class="back-btn"
+         <button type="button" class="back-btn"
                         onclick="window.location.href='home.php'">
                     Back
                 </button>
