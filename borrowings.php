@@ -27,15 +27,15 @@
          <label>Book Name</label>
             <input type="text" name="Book_Name" required>
 
-            <label>College</label>
+              <label>College</label>
             <select name="college" required>
-                <option value="">Select College</option>
+             <option value="">Select College</option>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Engineering">Engineering</option>
                 <option value="Business">Business</option>
                 <option value="Applied Arts">Applied Arts</option>
                 <option value="Nursing">Nursing</option>
-           
+             <option value="Physical Therapy">Physical Therapy</option>
             </select>
 
              <label>Days</label>
@@ -58,7 +58,7 @@
                 <option value="2">2</option>
                 <option value="3">3</option>
             </select>
-    
+
 
             <div class="form-buttons">
                 <button type="submit" class="save-btn">Save</button>

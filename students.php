@@ -22,9 +22,13 @@
 
             <label>College</label>
             <select name="college" required>
-                <option value="">Select College</option>
+             <option value="">Select College</option>
                 <option value="Computer Science">Computer Science</option>
                 <option value="Engineering">Engineering</option>
+                <option value="Business">Business</option>
+                <option value="Applied Arts">Applied Arts</option>
+                <option value="Nursing">Nursing</option>
+             <option value="Physical Therapy">Physical Therapy</option>
             </select>
 
             <label>Time</label>
