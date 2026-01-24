@@ -76,7 +76,7 @@ include('db.php');
         <li><a href="home.php"><i class="fas fa-home"></i> HOME</a></li>
         <li><a href="books.php"><i class="fas fa-book"></i> BOOK</a></li>
         <li><a href="category.php"><i class="fas fa-tags"></i> CATEGORY</a></li>
-        <li><a href="borrowings.php"><i class="fas fa-arrow-right-arrow-left"></i> BORROWING</a></li>
+        <li><a href="borrowing archive.php"><i class="fas fa-arrow-right-arrow-left"></i> BORROWING</a></li>
         <li><a href="student entry archive.php"><i class="fas fa-user-graduate"></i> STUDENT ENTRY</a></li>
       </ul>
     </div>

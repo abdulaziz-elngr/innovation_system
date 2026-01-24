@@ -7,7 +7,7 @@ body {
 }
 
 .login-container {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(7, 7, 7, 0.668);
   width: 320px;
   padding: 20px;
   margin: 100px auto;
@@ -17,7 +17,7 @@ body {
 }
 
 .login-container img {
-  width: 80px;
+  width: 200px;
   margin-bottom: 15px;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .login-container h2 {
-  color: #000000; /* أسود */
+  color: #ffffff; /* أسود */
   margin: 5px 0;
 }
 
