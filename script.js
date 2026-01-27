@@ -20,9 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
-function toggleMenu() {
-  var menu = document.getElementById("menu");
-  if (menu) {
-    menu.classList.toggle("show");
-  }
+function navigate(page) {
+  window.location.href = page;
 }
